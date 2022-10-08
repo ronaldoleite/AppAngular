@@ -1,0 +1,22 @@
+<section class="container">
+    <div class="box-12">
+        <h3 class="mg-t-2 mg-b-4 fonte22 fnc-preto-1">Interpolation</h3>
+        <p>A quantidade de clickes e: {{contadorClique}}</p>
+
+
+
+        <h3 class="mg-b-4 fonte22 fnc-preto-1">Property bind</h3>
+        <!--Mantem o botão desabilitado enquanto a variavel for >= 10 (condição)-->
+        <button class="btn btn-borda-azul mg-b-3" [disabled]="contadorClique >=10 ">Info</button>
+
+        <!-- O atributo entre colchetes obriga o Angular a se virar com o caminho -->
+        <img [src]="urlImage" alt="Alternate Text" height="50px" width="50px" />
+
+
+        <h3 class="mg-b-4  fonte22 fnc-preto-1">Event bind</h3>
+        <!--Mantem o botão desabilitado enquanto a variavel for >= 10 (condição)-->
+        <button class="btn btn-borda-azul mg-b-3"  (click)='adicionarClique()'>Clique aqui!</button>
+
+
+    </div>
+</section>
