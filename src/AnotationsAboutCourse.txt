@@ -1,0 +1,7 @@
+-- Atentar para os seguintes pontos.
+
+-- app.routes.ts
+   arquivo que define as rotas da aplicação.
+
+-- app.module.ts
+   configura o roteamento definido em app.routes.ts
