@@ -3,7 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\demos",
+    "\\src\\app\\demos\\data-binding",
     "\\src\\app\\navegacao"
   ],
+  "SelectedNode": "\\src\\app\\demos\\data-binding\\data-binding.component.ts",
   "PreviewInSolutionExplorer": false
 }
