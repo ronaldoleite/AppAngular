@@ -11,7 +11,9 @@ import { SobreComponent } from './institucional/sobre/sobre.component';
 import { rootRouterConfig } from './app.routes';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
-
+import { ProdutoService } from './produtos/produtos.service';
+import { ListarProdutoComponent } from './produtos/listar-produto/listar-produto.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,14 +24,17 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     ContatoComponent,
     SobreComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    ListarProdutoComponent
   ],
   imports: [
       BrowserModule,
       FormsModule,
+      HttpClientModule,
       [RouterModule.forRoot(rootRouterConfig)]
   ],
     providers: [
+      ProdutoService,
         {provide: APP_BASE_HREF, useValue: '/'}
     ],
   bootstrap: [AppComponent]

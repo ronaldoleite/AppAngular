@@ -1,0 +1,14 @@
+<section>
+    <div class="container">
+        <div class="box-12">
+            <h1 class="fonte20 espaco-letra fw-800 mg-t-2 ">Lista de Produtos</h1>
+
+            <div *ngFor="let produto of produtos" class="box-3">
+               <span> {{ produto.id }} </span>   
+               <span> {{ produto.nome }} </span>   
+               <span> {{ produto.valor }} </span>   
+               <span> {{ produto.imagem }} </span>   
+            </div>
+        </div>
+    </div>
+</section>
