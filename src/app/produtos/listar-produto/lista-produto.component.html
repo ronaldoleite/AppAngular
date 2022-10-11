@@ -3,8 +3,11 @@
         <div class="box-12">
             <h1 class="fonte20 espaco-letra fw-800 mg-t-2 ">Lista de Produtos</h1>
 
-            <div *ngFor="let produto of produtos" class="box-3">
-               <span> {{ produto.id }} </span>   
+            <div *ngFor="let produto of produtos" class="box-3 ">
+               <div class="box-12"> 
+                    <img src="{{ produto.imagem}}" alt="">
+               </div>  
+
                <span> {{ produto.nome }} </span>   
                <span> {{ produto.valor }} </span>   
                <span> {{ produto.imagem }} </span>   

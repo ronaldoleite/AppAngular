@@ -13,3 +13,9 @@
    para pegar os dados do json, como se fosse de um back end
    Rodar o comando abaixo:
    npx json-server --watch produtos.json
+
+===================================================
+= Ao iniciar a aplicação, rodar os comandos abaixo
+= ng s
+= npx json-server --watch produtos.json
+===================================================
