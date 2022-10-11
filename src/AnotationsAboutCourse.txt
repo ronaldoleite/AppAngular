@@ -1,7 +1,15 @@
 -- Atentar para os seguintes pontos.
 
 -- app.routes.ts
-   arquivo que define as rotas da aplicação.
+   arquivo que define as rotas da aplicaï¿½ï¿½o.
 
 -- app.module.ts
    configura o roteamento definido em app.routes.ts
+
+-- No modulo de consumir dados do Back End 
+-- instalar 
+   npm i json-server
+
+   para pegar os dados do json, como se fosse de um back end
+   Rodar o comando abaixo:
+   npx json-server --watch produtos.json

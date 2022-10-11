@@ -10,6 +10,7 @@ import { ContatoComponent } from './institucional/contato/contato.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
 import { rootRouterConfig } from './app.routes';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,6 +26,7 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
   ],
   imports: [
       BrowserModule,
+      FormsModule,
       [RouterModule.forRoot(rootRouterConfig)]
   ],
     providers: [

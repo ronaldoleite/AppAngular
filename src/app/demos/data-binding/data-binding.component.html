@@ -15,7 +15,19 @@
 
         <h3 class="mg-b-4  fonte22 fnc-preto-1">Event bind</h3>
         <!-- Chama a função adicionar Click no data-binding.Componente -->
-        <button class="btn btn-borda-azul mg-b-3"  (click)='adicionarClique()'>Clique aqui!</button>
+        <button class="btn btn-borda-azul mg-b-3" (click)='adicionarClique()'>Clique aqui! </button>
+        <button class="btn btn-borda-vermelho mg-b-3" (click)='zerarContador()' [disabled]="contadorClique < 10"> Zerar Contador! </button>
+
+
+        <h3 class="mg-b-4  fonte22 fnc-preto-1"> Two-way Binding </h3>
+
+        <!--
+          <input type="text" (keyUp)="keyUp($event)" placeholder="Digite seu nome completo..." />
+          <label>Seu nome é: {{nome}}</label>
+        -->
+
+        <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event" placeholder="Digite seu nome completo..." />
+        <label>Seu nome é: {{nome}}</label>
 
 
     </div>
