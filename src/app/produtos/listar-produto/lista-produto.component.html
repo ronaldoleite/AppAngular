@@ -3,17 +3,19 @@
         <div class="box-12">
             <h1 class="fonte20 espaco-letra fw-800 mg-t-2 ">Lista de Produtos</h1>
 
-            <div *ngFor="let produto of produtos" class="box-3 ">
-               <div class="box-12"> 
-                    <img src="/assets/{{ produto.imagem }}" alt="">
+            <div *ngFor="let produto of produtos" class="box-3 mg-b-4 shadow-down pd-10">
+               <div class="box-12 txt-c"> 
+                    <img src="/assets/img/{{ produto.imagem }}" alt="" width="170" height="200">
                </div>  
 
             <!--Utilizando o pipe para formatar retorno -->
-               <span class="fonte16 espaco-letra"> {{ produto.nome | titlecase}} </span>   
-               <span class="fonte16 espaco-letra"> {{ produto.valor | currency:'BRL':'symbol':'1.2-2':'pt'}} </span>   
-               <span class="fonte16 espaco-letra"> {{ produto.imagem }} </span>   
+               <p class="fonte16 espaco-letra txt-c mg-t-2"> {{ produto.nome | titlecase}} </p>   
+               <!-- currency
+                importar os seguintes pacotes 
+               -->
+               <p class="fonte16 espaco-letra fonte22 txt-c fw-bold mg-t-1"> {{ produto.valor | currency:'BRL':'symbol':'1.2-2':'pt'}} </p> 
 
-               <a [routerLink]="['produto-detalhe',produto.id]" class="btn btn-borda-azul">Detalhes</a>
+               <a [routerLink]="['produto-detalhe',produto.id]" class="btn btn-borda-azul mg-auto mg-t-2">Detalhes</a>
 
             </div>
         </div>
