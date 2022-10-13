@@ -5,12 +5,16 @@
 
             <div *ngFor="let produto of produtos" class="box-3 ">
                <div class="box-12"> 
-                    <img src="{{ produto.imagem}}" alt="">
+                    <img src="/assets/{{ produto.imagem }}" alt="">
                </div>  
 
-               <span> {{ produto.nome }} </span>   
-               <span> {{ produto.valor }} </span>   
-               <span> {{ produto.imagem }} </span>   
+            <!--Utilizando o pipe para formatar retorno -->
+               <span class="fonte16 espaco-letra"> {{ produto.nome | titlecase}} </span>   
+               <span class="fonte16 espaco-letra"> {{ produto.valor | currency:'BRL':'symbol':'1.2-2':'pt'}} </span>   
+               <span class="fonte16 espaco-letra"> {{ produto.imagem }} </span>   
+
+               <a [routerLink]="['produto-detalhe',produto.id]" class="btn btn-borda-azul">Detalhes</a>
+
             </div>
         </div>
     </div>

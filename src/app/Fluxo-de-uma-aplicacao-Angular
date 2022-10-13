@@ -1,0 +1,5 @@
+Ao criar um novo componente atentar para as referencias do mesmo.
+  
+    -- app.routes: Define a rota para a página html
+    -- app.module: Referenciar o componente.ts
+

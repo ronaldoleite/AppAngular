@@ -1,0 +1,20 @@
+Quando eu der um git clone ou baixar um projeto Angular, ele virá sem a pasta 'node_modules',
+
+Eu tenho duas possibilidades.
+
+Rodar o sistema ou Atualizar e rodar o sistema.
+
+Se a intenção é manter a versã e não atualizar os pacotes, eu devo rodar o comando abaixo.
+
+    npm i
+Esse comando irá instalar os pacotes necessários para rodar o sistema.
+
+
+Se a inteção for atualizar a versão do Angular e dos pacotes instalados no meu projeto, então devo fazer os passos pontuados abaixo.
+
+    baixar o pacote 
+        npm-check-update
+            npm install -g npm-check-updates
+    Atualizar
+        digite o comando:
+            ncu

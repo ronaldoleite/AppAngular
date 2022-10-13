@@ -12,10 +12,10 @@ export class ListarProdutoComponent implements OnInit {
 // injeção de dependencia
   constructor(private produtoService: ProdutoService) { }
 
-
+// cria uma lista de produtos
   public produtos: Produto[] = [];
   ngOnInit() {
-    this.produtoService.obterProduto()
+    this.produtoService.obterProduto()// obterProduto esta definido em produtoService
     .subscribe(
       produtos =>{
         this.produtos = produtos;
