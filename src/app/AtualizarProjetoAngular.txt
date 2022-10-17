@@ -18,3 +18,11 @@ Se a inteção for atualizar a versão do Angular e dos pacotes instalados no me
     Atualizar
         digite o comando:
             ncu
+    Apos rodar o comando ncu, execute o comando abaixo para instalar os pacotes atualizados no package.json
+           npm i
+    
+    Apos a instalação, compilar o projeto para ver se não quebrou nada.
+           ng b --prod
+
+    Caso na compilação apareça algum erro de versão, basta voltar a versão do pacote para a compativel com o projeto e rodar
+           npm i --que ira instalar apenas o pacote que voltamos a versão.
